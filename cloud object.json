@@ -1,0 +1,1458 @@
+{
+  "report": {
+    "docType": "iam.identity-access-map",
+    "version": "1.0.0",
+    "createdById": "IBMid-550008MVH2",
+    "date": "2020-09-05T12:19:19.798Z",
+    "fullReport": true,
+    "displayName": "Yashaswini KS",
+    "contact": "yashaswinikscool@gmail.com"
+  },
+  "responses": [
+    {
+      "resource": {
+        "crn": "crn:v1:bluemix:public:cloud-object-storage:global:a/6dc037464c42492ab451839b5015bb81:74770f9c-a998-46e6-82e3-56e9a43e929f::",
+        "displayName": "Cloud Object Storage-o5",
+        "serviceName": "cloud-object-storage",
+        "resourceGroupId": "d5ae86164dc741d08df7c7d2e82e50a8",
+        "resourceGroupName": "Default"
+      },
+      "access": [
+        {
+          "subject": {
+            "serviceId": {
+              "id": "iam-ServiceId-629052ac-8a15-4fde-befd-ad16aac427d0",
+              "displayName": "WDP-Project-Management-74770f9c-a998-46e6-82e3-56e9a43e929f"
+            }
+          },
+          "roleActions": [
+            {
+              "role": {
+                "crn": "crn:v1:bluemix:public:iam::::serviceRole:Manager",
+                "displayName": "Manager",
+                "description": "As a Manager, one can create/modify/delete buckets including managing retention policy, configuring IP addresses. In addition, one can upload and download the objects in the bucket."
+              },
+              "actions": [
+                {
+                  "action": "cloud-object-storage.bucket.put_firewall",
+                  "displayName": "bucket.put_firewall",
+                  "description": "Add a firewall configuration."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.get_location",
+                  "displayName": "bucket.get_location",
+                  "description": "View the location and storage class of a bucket."
+                },
+                {
+                  "action": "cloud-object-storage.object.post_initiate_upload",
+                  "displayName": "object.post_initiate_upload",
+                  "description": "Initiate multipart uploads."
+                },
+                {
+                  "action": "cloud-object-storage.object.delete_upload",
+                  "displayName": "object.delete_upload",
+                  "description": "Abort a multipart upload."
+                },
+                {
+                  "action": "cloud-object-storage.object.get_version",
+                  "displayName": "object.get_version",
+                  "description": "Unsupported operation - used for S3 API compatibility only."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.head",
+                  "displayName": "bucket.head",
+                  "description": "View bucket metadata."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.get_versions",
+                  "displayName": "bucket.get_versions",
+                  "description": "Unsupported operation - used for S3 API compatibility only."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.put_protection",
+                  "displayName": "bucket.put_protection",
+                  "description": "Add Immutable Object Storage policy."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.put_metrics_monitoring",
+                  "displayName": "bucket.put_metrics_monitoring",
+                  "description": "Add metrics monitoring configuration."
+                },
+                {
+                  "action": "cloud-object-storage.object.put_acl_version",
+                  "displayName": "object.put_acl_version",
+                  "description": "Unsupported operation - used for S3 API compatibility only."
+                },
+                {
+                  "action": "cloud-object-storage.account.get_account_buckets",
+                  "displayName": "account.get_account_buckets",
+                  "description": "List all buckets in a service instance."
+                },
+                {
+                  "action": "cloud-object-storage.object.delete",
+                  "displayName": "object.delete",
+                  "description": "Delete an object."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.delete_bucket",
+                  "displayName": "bucket.delete_bucket",
+                  "description": "Delete a bucket."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.get_lifecycle",
+                  "displayName": "bucket.get_lifecycle",
+                  "description": "Read a bucket lifecycle policy."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.get_activity_tracking",
+                  "displayName": "bucket.get_activity_tracking",
+                  "description": "Read activity tracking configuration."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.list_bucket_crn",
+                  "displayName": "bucket.list_bucket_crn",
+                  "description": "View a bucket CRN."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.get_firewall",
+                  "displayName": "bucket.get_firewall",
+                  "description": "Read a firewall configuration."
+                },
+                {
+                  "action": "cloud-object-storage.object.get_acl_version",
+                  "displayName": "object.get_acl_version",
+                  "description": "Read object ACL Version [deprecated]"
+                },
+                {
+                  "action": "cloud-object-storage.object.get",
+                  "displayName": "object.get",
+                  "description": "View and download objects."
+                },
+                {
+                  "action": "cloud-object-storage.object.put_acl",
+                  "displayName": "object.put_acl",
+                  "description": "Write object ACL [deprecated]."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.get_metrics_monitoring",
+                  "displayName": "bucket.get_metrics_monitoring",
+                  "description": "Read metrics monitoring configuration."
+                },
+                {
+                  "action": "cloud-object-storage.object.post_md",
+                  "displayName": "object.post_md",
+                  "description": "Update object metadata using HTML forms [deprecated]."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.put_lifecycle",
+                  "displayName": "bucket.put_lifecycle",
+                  "description": "Create a bucket lifecycle policy."
+                },
+                {
+                  "action": "cloud-object-storage.object.copy",
+                  "displayName": "object.copy",
+                  "description": "Copy (write) an object from one bucket to another."
+                },
+                {
+                  "action": "cloud-object-storage.object.copy_part",
+                  "displayName": "object.copy_part",
+                  "description": "Copy (write) an object part."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.get_basic",
+                  "displayName": "bucket.get_basic",
+                  "description": "List objects in a bucket [deprecated]."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.list_crk_id",
+                  "displayName": "bucket.list_crk_id",
+                  "description": "List the IDs of encryption root keys associated with a bucket."
+                },
+                {
+                  "action": "cloud-object-storage.object.head",
+                  "displayName": "object.head",
+                  "description": "Read an object's metadata."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.get_versioning",
+                  "displayName": "bucket.get_versioning",
+                  "description": "Unsupported operation - used for S3 API compatibility only."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.put_quota",
+                  "displayName": "bucket.put_quota",
+                  "description": "Unsupported operation - used for S3 API compatibility only."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.post_bucket",
+                  "displayName": "bucket.post_bucket",
+                  "description": "Internal use only - unsupported for users."
+                },
+                {
+                  "action": "cloud-object-storage.object.post_extend_retention",
+                  "displayName": "object.post_extend_retention",
+                  "description": "Extend a retention policy."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.delete_cors",
+                  "displayName": "bucket.delete_cors",
+                  "description": "Delete CORS rules."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.get_fasp_connection_info",
+                  "displayName": "bucket.get_fasp_connection_info",
+                  "description": "View Aspera FASP connection information."
+                },
+                {
+                  "action": "cloud-object-storage.account.delete_fasp_connection_info",
+                  "displayName": "account.delete_fasp_connection_info",
+                  "description": "Delete Aspera FASP connection information."
+                },
+                {
+                  "action": "cloud-object-storage.object.post_multi_delete",
+                  "displayName": "object.post_multi_delete",
+                  "description": "Delete multiple objects."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.get",
+                  "displayName": "bucket.get",
+                  "description": "List all the objects in a bucket."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.get_uploads",
+                  "displayName": "bucket.get_uploads",
+                  "description": "List all active multipart uploads for a bucket."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.get_cors",
+                  "displayName": "bucket.get_cors",
+                  "description": "Read CORS rules."
+                },
+                {
+                  "action": "cloud-object-storage.object.post_legal_hold",
+                  "displayName": "object.post_legal_hold",
+                  "description": "Add a legal hold to an object."
+                },
+                {
+                  "action": "cloud-object-storage.object.copy_get",
+                  "displayName": "object.copy_get",
+                  "description": "Copy (read) an object from one bucket to another."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.put_versioning",
+                  "displayName": "bucket.put_versioning",
+                  "description": "Unsupported operation - used for S3 API compatibility only."
+                },
+                {
+                  "action": "cloud-object-storage.object.get_acl",
+                  "displayName": "object.get_acl",
+                  "description": "Read object ACL [deprecated]."
+                },
+                {
+                  "action": "cloud-object-storage.object.delete_version",
+                  "displayName": "object.delete_version",
+                  "description": "Unsupported operation - used for S3 API compatibility only."
+                },
+                {
+                  "action": "cloud-object-storage.object.get_uploads",
+                  "displayName": "object.get_uploads",
+                  "description": "List parts of a multi-part object upload."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.get_protection",
+                  "displayName": "bucket.get_protection",
+                  "description": "Read Immutable Object Storage policy."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.put_cors",
+                  "displayName": "bucket.put_cors",
+                  "description": "Add CORS rules to a bucket."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.put_activity_tracking",
+                  "displayName": "bucket.put_activity_tracking",
+                  "description": "Add activity tracking configuration."
+                },
+                {
+                  "action": "cloud-object-storage.object.head_version",
+                  "displayName": "object.head_version",
+                  "description": "Unsupported operation - used for S3 API compatibility only."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.get_acl",
+                  "displayName": "bucket.get_acl",
+                  "description": "Read a bucket ACL [deprecated]."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.put_bucket",
+                  "displayName": "bucket.put_bucket",
+                  "description": "Create a bucket."
+                },
+                {
+                  "action": "cloud-object-storage.object.post",
+                  "displayName": "object.post",
+                  "description": "Upload an object using HTML forms [deprecated]."
+                },
+                {
+                  "action": "cloud-object-storage.object.put",
+                  "displayName": "object.put",
+                  "description": "Write and upload objects."
+                },
+                {
+                  "action": "cloud-object-storage.object.post_complete_upload",
+                  "displayName": "object.post_complete_upload",
+                  "description": "Complete a multipart upload."
+                },
+                {
+                  "action": "cloud-object-storage.object.get_legal_hold",
+                  "displayName": "object.get_legal_hold",
+                  "description": "View any legal holds on an object."
+                },
+                {
+                  "action": "cloud-object-storage.object.put_part",
+                  "displayName": "object.put_part",
+                  "description": "Upload an object part."
+                },
+                {
+                  "action": "cloud-object-storage.object.copy_part_get",
+                  "displayName": "object.copy_part_get",
+                  "description": "Copy (read) an object part."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.put_acl",
+                  "displayName": "bucket.put_acl",
+                  "description": "Create a bucket ACL [deprecated]."
+                },
+                {
+                  "action": "cloud-object-storage.object.restore",
+                  "displayName": "object.restore",
+                  "description": "Temporarily restore an archived object."
+                }
+              ],
+              "policyIds": [
+                "https://cloud.ibm.com/iam/serviceids/ServiceId-629052ac-8a15-4fde-befd-ad16aac427d0/policies/e0df48da-8995-4deb-b587-431e58a3fd24"
+              ]
+            }
+          ],
+          "platformExtensions": {
+            "roleActions": [
+              {
+                "role": {
+                  "crn": "crn:v1:bluemix:public:iam::::serviceRole:Manager",
+                  "displayName": "Manager",
+                  "description": "As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources."
+                },
+                "actions": [
+                  {
+                    "action": "global-search-tagging.resource.read",
+                    "displayName": "Find cloud resources",
+                    "description": ""
+                  },
+                  {
+                    "action": "iam.policy.read",
+                    "displayName": "IAM Policy Read",
+                    "description": "The ability to see policies."
+                  }
+                ],
+                "policyIds": [
+                  "https://cloud.ibm.com/iam/serviceids/ServiceId-629052ac-8a15-4fde-befd-ad16aac427d0/policies/e0df48da-8995-4deb-b587-431e58a3fd24"
+                ]
+              },
+              {
+                "role": {
+                  "crn": "crn:v1:bluemix:public:iam::::role:Administrator",
+                  "displayName": "Administrator",
+                  "description": "As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users."
+                },
+                "actions": [
+                  {
+                    "action": "resource-controller.key.delete",
+                    "displayName": "Resource Key Delete",
+                    "description": ""
+                  },
+                  {
+                    "action": "global-search-tagging.resource.read",
+                    "displayName": "Find cloud resources",
+                    "description": ""
+                  },
+                  {
+                    "action": "iam.policy.update",
+                    "displayName": "IAM Policy Update",
+                    "description": "The ability to update or edit existing policies."
+                  },
+                  {
+                    "action": "resource-controller.instance.create",
+                    "displayName": "Resource Instance Create",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.key.retrieve",
+                    "displayName": "Resource Key Retrieve ",
+                    "description": ""
+                  },
+                  {
+                    "action": "iam.role.read",
+                    "displayName": "IAM Role Read",
+                    "description": "The ability to see roles."
+                  },
+                  {
+                    "action": "resource-controller.alias.retrieve",
+                    "displayName": "Resource Alias Retrieve",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.group.retrieve",
+                    "displayName": "Resource Group Retrieve",
+                    "description": ""
+                  },
+                  {
+                    "action": "iam.policy.create",
+                    "displayName": "IAM Policy Create",
+                    "description": "The ability to create policies."
+                  },
+                  {
+                    "action": "resource-controller.key.update",
+                    "displayName": "Resource Key Update",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.instance.retrieve",
+                    "displayName": "Resource Instance Retrieve",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.quota.retrieve",
+                    "displayName": "Quota Definitions Retrieve",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.broker.retrieve",
+                    "displayName": "Resource Broker Retrieve",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.key.create",
+                    "displayName": "Resource Key Create",
+                    "description": ""
+                  },
+                  {
+                    "action": "global-search-tagging.tag.attach-user-tag",
+                    "displayName": "Attach tag",
+                    "description": ""
+                  },
+                  {
+                    "action": "iam.delegationPolicy.create",
+                    "displayName": "IAM Delegation policy Create",
+                    "description": "The ability to create a policy that can be delegated to another service."
+                  },
+                  {
+                    "action": "resource-controller.alias.create",
+                    "displayName": "Resource Alias Create",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.instance.retrieve_history",
+                    "displayName": "Resource Instance Retrieve History",
+                    "description": ""
+                  },
+                  {
+                    "action": "iam.policy.delete",
+                    "displayName": "IAM Policy Delete",
+                    "description": "The ability to delete existing policies."
+                  },
+                  {
+                    "action": "iam.service.read",
+                    "displayName": "IAM Service Read",
+                    "description": "The ability to see services."
+                  },
+                  {
+                    "action": "iam.role.assign",
+                    "displayName": "IAM Role Assign",
+                    "description": "The ability to assign roles to policies."
+                  },
+                  {
+                    "action": "resource-controller.group.update",
+                    "displayName": "Resource Group Update",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.group.delete",
+                    "displayName": "Resource Group Delete",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.alias.delete",
+                    "displayName": "Resource Alias Delete",
+                    "description": ""
+                  },
+                  {
+                    "action": "iam.policy.read",
+                    "displayName": "IAM Policy Read",
+                    "description": "The ability to see policies."
+                  },
+                  {
+                    "action": "resource-controller.broker.update",
+                    "displayName": "Resource Broker Update",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.broker.delete",
+                    "displayName": "Resource Broker Delete",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.binding.update",
+                    "displayName": "Resource Binding Update",
+                    "description": ""
+                  },
+                  {
+                    "action": "global-search-tagging.tag.detach-user-tag",
+                    "displayName": "Detach tag",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.binding.create",
+                    "displayName": "Resource Binding Create ",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.instance.update",
+                    "displayName": "Resource Instance Update",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.alias.update",
+                    "displayName": "Resource Alias Update ",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.group.create",
+                    "displayName": "Resource Group Create",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.binding.delete",
+                    "displayName": "Resource Binding Delete",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.binding.retrieve",
+                    "displayName": "Resource Binding Retrieve",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.broker.create",
+                    "displayName": "Resource Broker Create",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.instance.update_plan",
+                    "displayName": "Resource Instance Update Plan",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.instance.delete",
+                    "displayName": "Resource Instance Delete",
+                    "description": ""
+                  }
+                ],
+                "policyIds": [
+                  "https://cloud.ibm.com/iam/serviceids/ServiceId-629052ac-8a15-4fde-befd-ad16aac427d0/policies/e0df48da-8995-4deb-b587-431e58a3fd24"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "subject": {
+            "user": {
+              "id": "IBMid-550008MVH2",
+              "displayName": "Yashaswini KS",
+              "contact": "yashaswinikscool@gmail.com"
+            }
+          },
+          "roleActions": [
+            {
+              "role": {
+                "crn": "crn:v1:bluemix:public:iam::::serviceRole:Manager",
+                "displayName": "Manager",
+                "description": "As a Manager, one can create/modify/delete buckets including managing retention policy, configuring IP addresses. In addition, one can upload and download the objects in the bucket."
+              },
+              "actions": [
+                {
+                  "action": "cloud-object-storage.bucket.put_firewall",
+                  "displayName": "bucket.put_firewall",
+                  "description": "Add a firewall configuration."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.get_location",
+                  "displayName": "bucket.get_location",
+                  "description": "View the location and storage class of a bucket."
+                },
+                {
+                  "action": "cloud-object-storage.object.post_initiate_upload",
+                  "displayName": "object.post_initiate_upload",
+                  "description": "Initiate multipart uploads."
+                },
+                {
+                  "action": "cloud-object-storage.object.delete_upload",
+                  "displayName": "object.delete_upload",
+                  "description": "Abort a multipart upload."
+                },
+                {
+                  "action": "cloud-object-storage.object.get_version",
+                  "displayName": "object.get_version",
+                  "description": "Unsupported operation - used for S3 API compatibility only."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.head",
+                  "displayName": "bucket.head",
+                  "description": "View bucket metadata."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.get_versions",
+                  "displayName": "bucket.get_versions",
+                  "description": "Unsupported operation - used for S3 API compatibility only."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.put_protection",
+                  "displayName": "bucket.put_protection",
+                  "description": "Add Immutable Object Storage policy."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.put_metrics_monitoring",
+                  "displayName": "bucket.put_metrics_monitoring",
+                  "description": "Add metrics monitoring configuration."
+                },
+                {
+                  "action": "cloud-object-storage.object.put_acl_version",
+                  "displayName": "object.put_acl_version",
+                  "description": "Unsupported operation - used for S3 API compatibility only."
+                },
+                {
+                  "action": "cloud-object-storage.account.get_account_buckets",
+                  "displayName": "account.get_account_buckets",
+                  "description": "List all buckets in a service instance."
+                },
+                {
+                  "action": "cloud-object-storage.object.delete",
+                  "displayName": "object.delete",
+                  "description": "Delete an object."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.delete_bucket",
+                  "displayName": "bucket.delete_bucket",
+                  "description": "Delete a bucket."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.get_lifecycle",
+                  "displayName": "bucket.get_lifecycle",
+                  "description": "Read a bucket lifecycle policy."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.get_activity_tracking",
+                  "displayName": "bucket.get_activity_tracking",
+                  "description": "Read activity tracking configuration."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.list_bucket_crn",
+                  "displayName": "bucket.list_bucket_crn",
+                  "description": "View a bucket CRN."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.get_firewall",
+                  "displayName": "bucket.get_firewall",
+                  "description": "Read a firewall configuration."
+                },
+                {
+                  "action": "cloud-object-storage.object.get_acl_version",
+                  "displayName": "object.get_acl_version",
+                  "description": "Read object ACL Version [deprecated]"
+                },
+                {
+                  "action": "cloud-object-storage.object.get",
+                  "displayName": "object.get",
+                  "description": "View and download objects."
+                },
+                {
+                  "action": "cloud-object-storage.object.put_acl",
+                  "displayName": "object.put_acl",
+                  "description": "Write object ACL [deprecated]."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.get_metrics_monitoring",
+                  "displayName": "bucket.get_metrics_monitoring",
+                  "description": "Read metrics monitoring configuration."
+                },
+                {
+                  "action": "cloud-object-storage.object.post_md",
+                  "displayName": "object.post_md",
+                  "description": "Update object metadata using HTML forms [deprecated]."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.put_lifecycle",
+                  "displayName": "bucket.put_lifecycle",
+                  "description": "Create a bucket lifecycle policy."
+                },
+                {
+                  "action": "cloud-object-storage.object.copy",
+                  "displayName": "object.copy",
+                  "description": "Copy (write) an object from one bucket to another."
+                },
+                {
+                  "action": "cloud-object-storage.object.copy_part",
+                  "displayName": "object.copy_part",
+                  "description": "Copy (write) an object part."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.get_basic",
+                  "displayName": "bucket.get_basic",
+                  "description": "List objects in a bucket [deprecated]."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.list_crk_id",
+                  "displayName": "bucket.list_crk_id",
+                  "description": "List the IDs of encryption root keys associated with a bucket."
+                },
+                {
+                  "action": "cloud-object-storage.object.head",
+                  "displayName": "object.head",
+                  "description": "Read an object's metadata."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.get_versioning",
+                  "displayName": "bucket.get_versioning",
+                  "description": "Unsupported operation - used for S3 API compatibility only."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.put_quota",
+                  "displayName": "bucket.put_quota",
+                  "description": "Unsupported operation - used for S3 API compatibility only."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.post_bucket",
+                  "displayName": "bucket.post_bucket",
+                  "description": "Internal use only - unsupported for users."
+                },
+                {
+                  "action": "cloud-object-storage.object.post_extend_retention",
+                  "displayName": "object.post_extend_retention",
+                  "description": "Extend a retention policy."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.delete_cors",
+                  "displayName": "bucket.delete_cors",
+                  "description": "Delete CORS rules."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.get_fasp_connection_info",
+                  "displayName": "bucket.get_fasp_connection_info",
+                  "description": "View Aspera FASP connection information."
+                },
+                {
+                  "action": "cloud-object-storage.account.delete_fasp_connection_info",
+                  "displayName": "account.delete_fasp_connection_info",
+                  "description": "Delete Aspera FASP connection information."
+                },
+                {
+                  "action": "cloud-object-storage.object.post_multi_delete",
+                  "displayName": "object.post_multi_delete",
+                  "description": "Delete multiple objects."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.get",
+                  "displayName": "bucket.get",
+                  "description": "List all the objects in a bucket."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.get_uploads",
+                  "displayName": "bucket.get_uploads",
+                  "description": "List all active multipart uploads for a bucket."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.get_cors",
+                  "displayName": "bucket.get_cors",
+                  "description": "Read CORS rules."
+                },
+                {
+                  "action": "cloud-object-storage.object.post_legal_hold",
+                  "displayName": "object.post_legal_hold",
+                  "description": "Add a legal hold to an object."
+                },
+                {
+                  "action": "cloud-object-storage.object.copy_get",
+                  "displayName": "object.copy_get",
+                  "description": "Copy (read) an object from one bucket to another."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.put_versioning",
+                  "displayName": "bucket.put_versioning",
+                  "description": "Unsupported operation - used for S3 API compatibility only."
+                },
+                {
+                  "action": "cloud-object-storage.object.get_acl",
+                  "displayName": "object.get_acl",
+                  "description": "Read object ACL [deprecated]."
+                },
+                {
+                  "action": "cloud-object-storage.object.delete_version",
+                  "displayName": "object.delete_version",
+                  "description": "Unsupported operation - used for S3 API compatibility only."
+                },
+                {
+                  "action": "cloud-object-storage.object.get_uploads",
+                  "displayName": "object.get_uploads",
+                  "description": "List parts of a multi-part object upload."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.get_protection",
+                  "displayName": "bucket.get_protection",
+                  "description": "Read Immutable Object Storage policy."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.put_cors",
+                  "displayName": "bucket.put_cors",
+                  "description": "Add CORS rules to a bucket."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.put_activity_tracking",
+                  "displayName": "bucket.put_activity_tracking",
+                  "description": "Add activity tracking configuration."
+                },
+                {
+                  "action": "cloud-object-storage.object.head_version",
+                  "displayName": "object.head_version",
+                  "description": "Unsupported operation - used for S3 API compatibility only."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.get_acl",
+                  "displayName": "bucket.get_acl",
+                  "description": "Read a bucket ACL [deprecated]."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.put_bucket",
+                  "displayName": "bucket.put_bucket",
+                  "description": "Create a bucket."
+                },
+                {
+                  "action": "cloud-object-storage.object.post",
+                  "displayName": "object.post",
+                  "description": "Upload an object using HTML forms [deprecated]."
+                },
+                {
+                  "action": "cloud-object-storage.object.put",
+                  "displayName": "object.put",
+                  "description": "Write and upload objects."
+                },
+                {
+                  "action": "cloud-object-storage.object.post_complete_upload",
+                  "displayName": "object.post_complete_upload",
+                  "description": "Complete a multipart upload."
+                },
+                {
+                  "action": "cloud-object-storage.object.get_legal_hold",
+                  "displayName": "object.get_legal_hold",
+                  "description": "View any legal holds on an object."
+                },
+                {
+                  "action": "cloud-object-storage.object.put_part",
+                  "displayName": "object.put_part",
+                  "description": "Upload an object part."
+                },
+                {
+                  "action": "cloud-object-storage.object.copy_part_get",
+                  "displayName": "object.copy_part_get",
+                  "description": "Copy (read) an object part."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.put_acl",
+                  "displayName": "bucket.put_acl",
+                  "description": "Create a bucket ACL [deprecated]."
+                },
+                {
+                  "action": "cloud-object-storage.object.restore",
+                  "displayName": "object.restore",
+                  "description": "Temporarily restore an archived object."
+                }
+              ],
+              "policyIds": [
+                "https://cloud.ibm.com/iam/users/IBMid-550008MVH2/policies/9a0045ea-0a5d-40b9-b480-74f310e3fca2"
+              ]
+            }
+          ],
+          "platformExtensions": {
+            "roleActions": [
+              {
+                "role": {
+                  "crn": "crn:v1:bluemix:public:iam::::serviceRole:Manager",
+                  "displayName": "Manager",
+                  "description": "As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources."
+                },
+                "actions": [
+                  {
+                    "action": "global-search-tagging.resource.read",
+                    "displayName": "Find cloud resources",
+                    "description": ""
+                  },
+                  {
+                    "action": "iam.policy.read",
+                    "displayName": "IAM Policy Read",
+                    "description": "The ability to see policies."
+                  }
+                ],
+                "policyIds": [
+                  "https://cloud.ibm.com/iam/users/IBMid-550008MVH2/policies/9a0045ea-0a5d-40b9-b480-74f310e3fca2"
+                ]
+              },
+              {
+                "role": {
+                  "crn": "crn:v1:bluemix:public:iam::::role:Administrator",
+                  "displayName": "Administrator",
+                  "description": "As an administrator, you can perform all platform actions based on the resource this role is being assigned, including assigning access policies to other users."
+                },
+                "actions": [
+                  {
+                    "action": "resource-controller.key.delete",
+                    "displayName": "Resource Key Delete",
+                    "description": ""
+                  },
+                  {
+                    "action": "global-search-tagging.resource.read",
+                    "displayName": "Find cloud resources",
+                    "description": ""
+                  },
+                  {
+                    "action": "iam.policy.update",
+                    "displayName": "IAM Policy Update",
+                    "description": "The ability to update or edit existing policies."
+                  },
+                  {
+                    "action": "resource-controller.instance.create",
+                    "displayName": "Resource Instance Create",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.key.retrieve",
+                    "displayName": "Resource Key Retrieve ",
+                    "description": ""
+                  },
+                  {
+                    "action": "iam.role.read",
+                    "displayName": "IAM Role Read",
+                    "description": "The ability to see roles."
+                  },
+                  {
+                    "action": "resource-controller.alias.retrieve",
+                    "displayName": "Resource Alias Retrieve",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.group.retrieve",
+                    "displayName": "Resource Group Retrieve",
+                    "description": ""
+                  },
+                  {
+                    "action": "iam.policy.create",
+                    "displayName": "IAM Policy Create",
+                    "description": "The ability to create policies."
+                  },
+                  {
+                    "action": "resource-controller.key.update",
+                    "displayName": "Resource Key Update",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.instance.retrieve",
+                    "displayName": "Resource Instance Retrieve",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.quota.retrieve",
+                    "displayName": "Quota Definitions Retrieve",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.broker.retrieve",
+                    "displayName": "Resource Broker Retrieve",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.key.create",
+                    "displayName": "Resource Key Create",
+                    "description": ""
+                  },
+                  {
+                    "action": "global-search-tagging.tag.attach-user-tag",
+                    "displayName": "Attach tag",
+                    "description": ""
+                  },
+                  {
+                    "action": "iam.delegationPolicy.create",
+                    "displayName": "IAM Delegation policy Create",
+                    "description": "The ability to create a policy that can be delegated to another service."
+                  },
+                  {
+                    "action": "resource-controller.alias.create",
+                    "displayName": "Resource Alias Create",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.instance.retrieve_history",
+                    "displayName": "Resource Instance Retrieve History",
+                    "description": ""
+                  },
+                  {
+                    "action": "iam.policy.delete",
+                    "displayName": "IAM Policy Delete",
+                    "description": "The ability to delete existing policies."
+                  },
+                  {
+                    "action": "iam.service.read",
+                    "displayName": "IAM Service Read",
+                    "description": "The ability to see services."
+                  },
+                  {
+                    "action": "iam.role.assign",
+                    "displayName": "IAM Role Assign",
+                    "description": "The ability to assign roles to policies."
+                  },
+                  {
+                    "action": "resource-controller.group.update",
+                    "displayName": "Resource Group Update",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.group.delete",
+                    "displayName": "Resource Group Delete",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.alias.delete",
+                    "displayName": "Resource Alias Delete",
+                    "description": ""
+                  },
+                  {
+                    "action": "iam.policy.read",
+                    "displayName": "IAM Policy Read",
+                    "description": "The ability to see policies."
+                  },
+                  {
+                    "action": "resource-controller.broker.update",
+                    "displayName": "Resource Broker Update",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.broker.delete",
+                    "displayName": "Resource Broker Delete",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.binding.update",
+                    "displayName": "Resource Binding Update",
+                    "description": ""
+                  },
+                  {
+                    "action": "global-search-tagging.tag.detach-user-tag",
+                    "displayName": "Detach tag",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.binding.create",
+                    "displayName": "Resource Binding Create ",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.instance.update",
+                    "displayName": "Resource Instance Update",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.alias.update",
+                    "displayName": "Resource Alias Update ",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.group.create",
+                    "displayName": "Resource Group Create",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.binding.delete",
+                    "displayName": "Resource Binding Delete",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.binding.retrieve",
+                    "displayName": "Resource Binding Retrieve",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.broker.create",
+                    "displayName": "Resource Broker Create",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.instance.update_plan",
+                    "displayName": "Resource Instance Update Plan",
+                    "description": ""
+                  },
+                  {
+                    "action": "resource-controller.instance.delete",
+                    "displayName": "Resource Instance Delete",
+                    "description": ""
+                  }
+                ],
+                "policyIds": [
+                  "https://cloud.ibm.com/iam/users/IBMid-550008MVH2/policies/9a0045ea-0a5d-40b9-b480-74f310e3fca2"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "subject": {
+            "serviceId": {
+              "id": "iam-ServiceId-cfa8789a-5d97-4e98-a59d-7f9a48679382",
+              "displayName": "catalog-86cab00c-414b-4dd6-b571-caa7421a90ab-HMAC-manager"
+            }
+          },
+          "roleActions": [
+            {
+              "role": {
+                "crn": "crn:v1:bluemix:public:iam::::serviceRole:Manager",
+                "displayName": "Manager",
+                "description": "As a Manager, one can create/modify/delete buckets including managing retention policy, configuring IP addresses. In addition, one can upload and download the objects in the bucket."
+              },
+              "actions": [
+                {
+                  "action": "cloud-object-storage.bucket.put_firewall",
+                  "displayName": "bucket.put_firewall",
+                  "description": "Add a firewall configuration."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.get_location",
+                  "displayName": "bucket.get_location",
+                  "description": "View the location and storage class of a bucket."
+                },
+                {
+                  "action": "cloud-object-storage.object.post_initiate_upload",
+                  "displayName": "object.post_initiate_upload",
+                  "description": "Initiate multipart uploads."
+                },
+                {
+                  "action": "cloud-object-storage.object.delete_upload",
+                  "displayName": "object.delete_upload",
+                  "description": "Abort a multipart upload."
+                },
+                {
+                  "action": "cloud-object-storage.object.get_version",
+                  "displayName": "object.get_version",
+                  "description": "Unsupported operation - used for S3 API compatibility only."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.head",
+                  "displayName": "bucket.head",
+                  "description": "View bucket metadata."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.get_versions",
+                  "displayName": "bucket.get_versions",
+                  "description": "Unsupported operation - used for S3 API compatibility only."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.put_protection",
+                  "displayName": "bucket.put_protection",
+                  "description": "Add Immutable Object Storage policy."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.put_metrics_monitoring",
+                  "displayName": "bucket.put_metrics_monitoring",
+                  "description": "Add metrics monitoring configuration."
+                },
+                {
+                  "action": "cloud-object-storage.object.put_acl_version",
+                  "displayName": "object.put_acl_version",
+                  "description": "Unsupported operation - used for S3 API compatibility only."
+                },
+                {
+                  "action": "cloud-object-storage.account.get_account_buckets",
+                  "displayName": "account.get_account_buckets",
+                  "description": "List all buckets in a service instance."
+                },
+                {
+                  "action": "cloud-object-storage.object.delete",
+                  "displayName": "object.delete",
+                  "description": "Delete an object."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.delete_bucket",
+                  "displayName": "bucket.delete_bucket",
+                  "description": "Delete a bucket."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.get_lifecycle",
+                  "displayName": "bucket.get_lifecycle",
+                  "description": "Read a bucket lifecycle policy."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.get_activity_tracking",
+                  "displayName": "bucket.get_activity_tracking",
+                  "description": "Read activity tracking configuration."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.list_bucket_crn",
+                  "displayName": "bucket.list_bucket_crn",
+                  "description": "View a bucket CRN."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.get_firewall",
+                  "displayName": "bucket.get_firewall",
+                  "description": "Read a firewall configuration."
+                },
+                {
+                  "action": "cloud-object-storage.object.get_acl_version",
+                  "displayName": "object.get_acl_version",
+                  "description": "Read object ACL Version [deprecated]"
+                },
+                {
+                  "action": "cloud-object-storage.object.get",
+                  "displayName": "object.get",
+                  "description": "View and download objects."
+                },
+                {
+                  "action": "cloud-object-storage.object.put_acl",
+                  "displayName": "object.put_acl",
+                  "description": "Write object ACL [deprecated]."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.get_metrics_monitoring",
+                  "displayName": "bucket.get_metrics_monitoring",
+                  "description": "Read metrics monitoring configuration."
+                },
+                {
+                  "action": "cloud-object-storage.object.post_md",
+                  "displayName": "object.post_md",
+                  "description": "Update object metadata using HTML forms [deprecated]."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.put_lifecycle",
+                  "displayName": "bucket.put_lifecycle",
+                  "description": "Create a bucket lifecycle policy."
+                },
+                {
+                  "action": "cloud-object-storage.object.copy",
+                  "displayName": "object.copy",
+                  "description": "Copy (write) an object from one bucket to another."
+                },
+                {
+                  "action": "cloud-object-storage.object.copy_part",
+                  "displayName": "object.copy_part",
+                  "description": "Copy (write) an object part."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.get_basic",
+                  "displayName": "bucket.get_basic",
+                  "description": "List objects in a bucket [deprecated]."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.list_crk_id",
+                  "displayName": "bucket.list_crk_id",
+                  "description": "List the IDs of encryption root keys associated with a bucket."
+                },
+                {
+                  "action": "cloud-object-storage.object.head",
+                  "displayName": "object.head",
+                  "description": "Read an object's metadata."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.get_versioning",
+                  "displayName": "bucket.get_versioning",
+                  "description": "Unsupported operation - used for S3 API compatibility only."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.put_quota",
+                  "displayName": "bucket.put_quota",
+                  "description": "Unsupported operation - used for S3 API compatibility only."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.post_bucket",
+                  "displayName": "bucket.post_bucket",
+                  "description": "Internal use only - unsupported for users."
+                },
+                {
+                  "action": "cloud-object-storage.object.post_extend_retention",
+                  "displayName": "object.post_extend_retention",
+                  "description": "Extend a retention policy."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.delete_cors",
+                  "displayName": "bucket.delete_cors",
+                  "description": "Delete CORS rules."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.get_fasp_connection_info",
+                  "displayName": "bucket.get_fasp_connection_info",
+                  "description": "View Aspera FASP connection information."
+                },
+                {
+                  "action": "cloud-object-storage.account.delete_fasp_connection_info",
+                  "displayName": "account.delete_fasp_connection_info",
+                  "description": "Delete Aspera FASP connection information."
+                },
+                {
+                  "action": "cloud-object-storage.object.post_multi_delete",
+                  "displayName": "object.post_multi_delete",
+                  "description": "Delete multiple objects."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.get",
+                  "displayName": "bucket.get",
+                  "description": "List all the objects in a bucket."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.get_uploads",
+                  "displayName": "bucket.get_uploads",
+                  "description": "List all active multipart uploads for a bucket."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.get_cors",
+                  "displayName": "bucket.get_cors",
+                  "description": "Read CORS rules."
+                },
+                {
+                  "action": "cloud-object-storage.object.post_legal_hold",
+                  "displayName": "object.post_legal_hold",
+                  "description": "Add a legal hold to an object."
+                },
+                {
+                  "action": "cloud-object-storage.object.copy_get",
+                  "displayName": "object.copy_get",
+                  "description": "Copy (read) an object from one bucket to another."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.put_versioning",
+                  "displayName": "bucket.put_versioning",
+                  "description": "Unsupported operation - used for S3 API compatibility only."
+                },
+                {
+                  "action": "cloud-object-storage.object.get_acl",
+                  "displayName": "object.get_acl",
+                  "description": "Read object ACL [deprecated]."
+                },
+                {
+                  "action": "cloud-object-storage.object.delete_version",
+                  "displayName": "object.delete_version",
+                  "description": "Unsupported operation - used for S3 API compatibility only."
+                },
+                {
+                  "action": "cloud-object-storage.object.get_uploads",
+                  "displayName": "object.get_uploads",
+                  "description": "List parts of a multi-part object upload."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.get_protection",
+                  "displayName": "bucket.get_protection",
+                  "description": "Read Immutable Object Storage policy."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.put_cors",
+                  "displayName": "bucket.put_cors",
+                  "description": "Add CORS rules to a bucket."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.put_activity_tracking",
+                  "displayName": "bucket.put_activity_tracking",
+                  "description": "Add activity tracking configuration."
+                },
+                {
+                  "action": "cloud-object-storage.object.head_version",
+                  "displayName": "object.head_version",
+                  "description": "Unsupported operation - used for S3 API compatibility only."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.get_acl",
+                  "displayName": "bucket.get_acl",
+                  "description": "Read a bucket ACL [deprecated]."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.put_bucket",
+                  "displayName": "bucket.put_bucket",
+                  "description": "Create a bucket."
+                },
+                {
+                  "action": "cloud-object-storage.object.post",
+                  "displayName": "object.post",
+                  "description": "Upload an object using HTML forms [deprecated]."
+                },
+                {
+                  "action": "cloud-object-storage.object.put",
+                  "displayName": "object.put",
+                  "description": "Write and upload objects."
+                },
+                {
+                  "action": "cloud-object-storage.object.post_complete_upload",
+                  "displayName": "object.post_complete_upload",
+                  "description": "Complete a multipart upload."
+                },
+                {
+                  "action": "cloud-object-storage.object.get_legal_hold",
+                  "displayName": "object.get_legal_hold",
+                  "description": "View any legal holds on an object."
+                },
+                {
+                  "action": "cloud-object-storage.object.put_part",
+                  "displayName": "object.put_part",
+                  "description": "Upload an object part."
+                },
+                {
+                  "action": "cloud-object-storage.object.copy_part_get",
+                  "displayName": "object.copy_part_get",
+                  "description": "Copy (read) an object part."
+                },
+                {
+                  "action": "cloud-object-storage.bucket.put_acl",
+                  "displayName": "bucket.put_acl",
+                  "description": "Create a bucket ACL [deprecated]."
+                },
+                {
+                  "action": "cloud-object-storage.object.restore",
+                  "displayName": "object.restore",
+                  "description": "Temporarily restore an archived object."
+                }
+              ],
+              "policyIds": [
+                "https://cloud.ibm.com/iam/serviceids/ServiceId-cfa8789a-5d97-4e98-a59d-7f9a48679382/policies/854f72fb-bcd5-41ab-9b67-4bf7dd767b87"
+              ]
+            }
+          ],
+          "platformExtensions": {
+            "roleActions": [
+              {
+                "role": {
+                  "crn": "crn:v1:bluemix:public:iam::::serviceRole:Manager",
+                  "displayName": "Manager",
+                  "description": "As a manager, you have permissions beyond the writer role to complete privileged actions as defined by the service. In addition, you can create and edit service-specific resources."
+                },
+                "actions": [
+                  {
+                    "action": "global-search-tagging.resource.read",
+                    "displayName": "Find cloud resources",
+                    "description": ""
+                  },
+                  {
+                    "action": "iam.policy.read",
+                    "displayName": "IAM Policy Read",
+                    "description": "The ability to see policies."
+                  }
+                ],
+                "policyIds": [
+                  "https://cloud.ibm.com/iam/serviceids/ServiceId-cfa8789a-5d97-4e98-a59d-7f9a48679382/policies/854f72fb-bcd5-41ab-9b67-4bf7dd767b87"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
